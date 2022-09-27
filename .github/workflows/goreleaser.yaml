@@ -26,6 +26,8 @@ jobs:
       run: |
         go get github.com/golang/mock/mockgen@v1.4.3
         go get -u github.com/go-bindata/go-bindata/...
+        go get github.com/spf13/viper@v1.9.0
+        go get -u github.com/spf13/cobra@v1.2.1
         ARTIFACT_DESTINATION=./builds make build
     # - name: Check version
     #   run: |
